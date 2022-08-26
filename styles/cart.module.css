@@ -1,0 +1,74 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 5rem 1fr minmax(30rem, 50rem) 5rem;
+    padding-top: 3rem;
+}
+
+.productsContainer {
+    grid-column: 2/3;
+}
+
+.cartTitleBox {
+    width: 100%;
+    height: 6rem;
+    border: 1px solid lightgray;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.cartTitle {
+    font-size: 2.6rem;
+    font-weight: 700;
+    padding-left: 3rem;
+}
+
+.productBox {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    border: 1px solid lightgray;
+    border-top: none;
+}
+
+.productImageWrap {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+}
+
+.productInfo {}
+
+.productTitle {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.productPriceBox {}
+
+.productQntInput {
+    width: 6rem;
+    height: 4rem;
+    padding-left: 1rem;
+    font-size: 1.6rem;
+}
+
+.productQntInput:focus {
+    outline: none;
+}
+
+.productTotalPrice {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.productRemoveBtn {
+
+}
+
+.infoContainer {
+    grid-column: 3/4;
+    margin-left: 2rem;
+    padding: 2rem;
+}

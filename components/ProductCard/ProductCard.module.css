@@ -1,0 +1,144 @@
+.productBox {
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .15);
+    overflow: hidden;
+    transition: all .3s;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.productBox:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .4);
+
+}
+
+.productImg {
+    transition: all .3s;
+}
+
+.productBox:hover .productImg {
+    filter: brightness(.55) blur(.2rem);
+}
+
+.productInfoBox {
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.productName {
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.productPriceBox {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.productSalePrice {
+    display: block;
+}
+
+.productDiscountRegularPrice {
+    display: block;
+    text-decoration: line-through;
+}
+
+.productRatingBox {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.4rem;
+}
+
+.productViewBtnBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+.productViewBtn {
+    padding: 1.5rem 6rem;
+    background-color: crimson;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    transition: all .3s;
+}
+
+.productViewBtn:hover {
+    color: lightgray;
+}
+
+
+.productBox:hover .productViewBtnBox {
+    opacity: 1;
+    visibility: visible;
+}
+
+.productBox:hover .productViewBtn {
+    transform: translateY(100%);
+}
+
+.productActionsBox {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .3s;
+}
+
+.productActionBtn {
+    background-color: black;
+    border: 2px solid black;
+    color: #ffffff;
+    padding: .5rem;
+    border-radius: 50%;
+    z-index: 20;
+    transition: all .3s;
+}
+
+.actionBtnIcon {
+    width: 2rem;
+    height: 2rem;
+    fill: white;
+    transition: all .3s;
+}
+
+.productActionBtn:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+}
+
+.productActionBtn:hover .actionBtnIcon {
+    fill: black;
+}
+
+.productActionBtn:active {
+    transform: translateY(3px);
+}
+
+.productBox:hover .productActionsBox {
+    opacity: 1;
+    visibility: visible;
+    bottom: 7%;
+}

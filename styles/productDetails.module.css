@@ -1,0 +1,138 @@
+.container {
+    padding: 5rem 0 5rem 0;
+    display: grid;
+    grid-template-columns: auto minmax(30rem, 80rem) minmax(30rem, 80rem) auto;
+    grid-column-gap: 3rem;
+}
+
+.imageContainer {
+    grid-column: 2 / 3;
+    width: 100%;
+    padding: 2rem;
+}
+
+.imageBox {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+}
+
+.imagesContainer {
+
+}
+
+.productContainer {
+    grid-column: 3 / 4;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.productTitle {
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.ratingContainer {}
+
+.priceContainer {
+
+}
+
+.regular_price {
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.salePriceContainer {
+    display: flex;
+    gap: 2rem;
+}
+
+.price {
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.salePrice {
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.oldPrice {
+    font-size: 1.8rem;
+    opacity: .8;
+    text-decoration: line-through;
+}
+
+.description {
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+.stock {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.cartBtnContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.quantity {
+    position: absolute;
+    top: -2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.quantityInput {
+    width: 6rem;
+    height: 4rem;
+    font-size: 1.4rem;
+    padding-left: 1rem;
+}
+
+.quantityInput:focus {
+    outline: none;
+}
+
+.cartBtn {
+    padding: .5rem 6rem;
+    border: none;
+    background-color: #3b5c8c;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+    outline: none;
+    transition: all .3s;
+}
+
+.cartBtn:hover {
+    background-color: #2d4769;
+}
+
+.cartBtn:active {
+    background-color: #376b5a;
+}
+
+.socialShare {
+
+}
+
+.shereList {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.shareItem {}
+
+.shareBtn {}
+
